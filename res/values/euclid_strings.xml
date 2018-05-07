@@ -30,6 +30,11 @@
     <!-- Summary for Wellbeing screen time usage. [CHAR LIMIT=NONE] -->
     <string name="screen_time_summary_usage_today">%1$s today</string>
 
+    <!-- Location settings screen, setting check box label if Assisted GPS should be enabled -->
+    <string name="assisted_gps">Use assisted GPS</string>
+    <!-- Location settings screen, setting summary for Assisted GPS switch -->
+    <string name="assisted_gps_summary">Download satellite assistance data from the internet which can greatly improve the GPS startup performance</string>
+
     <!-- About phone screen, Euclid version -->
     <string name="euclid_version">Euclid version</string>
     <string name="euclid_version_default">Unknown</string>

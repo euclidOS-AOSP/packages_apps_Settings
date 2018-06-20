@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2019-2024 MistOS
-     SPDX-License-Identifier: Apache-2.0
+     Copyright (C) 2018 The LineageOS Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
 -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-
-    <!-- About phone screen, Euclid version -->
-    <string name="euclid_version">Euclid version</string>
-    <string name="euclid_version_default">Unknown</string>
-    <string name="keywords_euclid_version">Euclid version, euclid version</string>
-
-    <!-- Maintainer Info -->
-    <string name="maintainer_title">Maintainer</string>
-    <string name="maintainer_unknown">UNKNOWN MAINTAINER</string>
-    <string name="maintainer_official">OFFICIAL</string>
-    <string name="maintainer_unofficial">UNOFFICIAL BUILD</string>
 
     <!-- Screenshot shutter -->
     <string name="screenshot_shutter_sound_title">Screenshot sound</string>
@@ -27,7 +27,7 @@
     <string name="show_clipboard_overlay_title">Show clipboard overlay</string>
     <string name="show_clipboard_overlay_summary">Show an overlay in the left bottom corner of the screen when something is copied to the clipboard</string>
 
-     <!-- Force LTE_CA -->
+    <!-- Force LTE_CA -->
     <string name="force_lte_ca">Force LTE CA</string>
     <string name="force_lte_ca_summary">Force LTE carrier aggregation to work</string>
 
@@ -40,7 +40,7 @@
     <string name="private_dns_mode_cloudflare_block_malware_and_adult_content" translatable="false">Cloudflare Block Malware and Adult Content DNS</string>
     <!-- Cloudflare Block Malware and Adult Content DNS hostname -->
     <string name="private_dns_hostname_cloudflare_block_malware_and_adult_content" translatable="false">family.cloudflare-dns.com</string>
-
+    
     <!-- AdGuard DNS Option -->
     <string name="private_dns_mode_adguard" translatable="false">AdGuard DNS</string>
     <!-- AdGuard DNS hostname -->

@@ -182,4 +182,7 @@
     <!-- Doze on charge -->
     <string name="doze_on_charge_title">Always show when charging</string>
     <string name="doze_on_charge_summary">Display device is charging</string>
+
+    <!-- Label for a numbered SIM card.  [CHAR LIMIT=40] -->
+    <string name="sim_card_number_title" translatable="false">SIM <xliff:g id="card_number">%1$d</xliff:g></string>
 </resources>

@@ -593,4 +593,6 @@ public class Settings extends SettingsActivity {
     public static class PrismStatusBarActivity extends SettingsActivity {}
 
     public static class PrivateDnsSettingsActivity extends SettingsActivity { /* empty */ }
+    // LiveDisplay
+    public static class LiveDisplaySettingsActivity extends SettingsActivity { /* empty */ }
 }

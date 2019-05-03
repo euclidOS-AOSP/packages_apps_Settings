@@ -231,6 +231,7 @@ import com.prism.settings.fragments.lockscreen.*;
 
 
 import ink.kscope.settings.wifi.tether.WifiTetherClientManager;
+import com.android.settings.livedisplay.LiveDisplaySettings;
 
 public class SettingsGateway {
 
@@ -448,6 +449,7 @@ public class SettingsGateway {
             PrivateDnsSettings.class.getName(),
             SleepMode.class.getName(),
             RunningServices.class.getName(),
+            LiveDisplaySettings.class.getName(),
     };
 
     public static final String[] SETTINGS_FOR_RESTRICTED = {

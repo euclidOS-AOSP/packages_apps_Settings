@@ -76,6 +76,7 @@ android_library {
         "res-product",
         "Prism/res",
         "VendorSupport/res",
+        "TouchGestures/res"
     ],
     optional_uses_libs: ["com.android.extensions.appfunctions"],
 

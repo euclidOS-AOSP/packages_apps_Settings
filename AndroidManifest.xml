@@ -11,6 +11,9 @@
         android:name="com.android.settings.BATTERY_DATA"
         android:protectionLevel="signature|privileged"/>
 
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER_HINTS" />
+
     <!-- Permission for using the Biometric Settings Provider. -->
     <permission
         android:name="com.android.settings.USE_BIOMETRIC_PROVIDER"

@@ -17,11 +17,13 @@
 package com.android.settings.gestures;
 
 import android.app.settings.SettingsEnums;
+import android.content.ContentResolver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.content.res.TypedArray;
 import android.os.Bundle;
+import android.os.UserHandle;
 import android.provider.Settings;
 import android.view.WindowManager;
 
@@ -63,6 +65,7 @@ public class GestureNavigationSettingsFragment extends DashboardFragment {
     private static final String NEXUSLAUNCHER_PACKAGE_NAME = "com.google.android.apps.nexuslauncher";
     private static final String NOGESTUREHINT_OVERLAY = "com.google.android.apps.nexuslauncher.overlay.nogesturehint";
     private static final String NAVIGATION_BAR_HINT_KEY = "navigation_bar_hint";
+    private static final String GESTURE_NAVBAR_LENGTH_KEY = "gesture_navbar_length_preference";
 
     private WindowManager mWindowManager;
     private BackGestureIndicatorView mIndicatorView;
@@ -95,6 +98,8 @@ public class GestureNavigationSettingsFragment extends DashboardFragment {
         initSliderPreference(LEFT_EDGE_SEEKBAR_KEY);
         initSliderPreference(RIGHT_EDGE_SEEKBAR_KEY);
         initTutorialButton();
+      
+        initGestureNavbarLengthPreference();
 
         SystemSettingSwitchPreference gestureHintPref =
                 getPreferenceScreen().findPreference(GESTURE_HINT_KEY);
@@ -212,6 +217,24 @@ public class GestureNavigationSettingsFragment extends DashboardFragment {
         }
         final float percent = (progress - min) / diffProgress;
         return Math.floor(Math.max(0.0f, Math.min(1.0f, percent)) * 100) / 100;
+    }
+
+    private void initGestureNavbarLengthPreference() {
+        final ContentResolver resolver = getContext().getContentResolver();
+        final SliderPreference pref =
+            getPreferenceScreen().findPreference(GESTURE_NAVBAR_LENGTH_KEY);
+        pref.setUpdatesContinuously(true);
+        pref.setHapticFeedbackMode(SliderPreference.HAPTIC_FEEDBACK_MODE_ON_TICKS);
+        pref.setSliderIncrement(1);
+        pref.setTickVisible(true);
+        pref.setValue(Settings.System.getIntForUser(
+            resolver, Settings.System.GESTURE_NAVBAR_LENGTH_MODE,
+            1, UserHandle.USER_CURRENT));
+        pref.setOnPreferenceChangeListener((p, v) -> {
+            Settings.System.putIntForUser(resolver, Settings.System.GESTURE_NAVBAR_LENGTH_MODE,
+                (Integer) v, UserHandle.USER_CURRENT);
+            return true;
+        });
     }
 
     private static float[] getFloatArray(TypedArray array) {

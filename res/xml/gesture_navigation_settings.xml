@@ -74,8 +74,16 @@
         android:key="gesture_navigation_settings_footer"
         android:title="@string/back_sensitivity_dialog_message"
         settings:searchable="false"/>
-        
+     
     <com.android.settingslib.widget.SliderPreference
+        android:key="gesture_navbar_height_preference"
+        android:title="@string/gesture_navbar_radius_title"
+        android:max="4"
+        settings:textStart="@string/thin_label"
+        settings:textEnd="@string/thick_label"
+        android:dependency="navigation_bar_hint" />
+        
+   <com.android.settingslib.widget.SliderPreference
         android:key="gesture_navbar_length_preference"
         android:title="@string/gesture_navbar_length_title"
         android:max="2"

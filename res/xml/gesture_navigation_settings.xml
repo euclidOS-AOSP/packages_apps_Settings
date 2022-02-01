@@ -23,6 +23,7 @@
     android:title="@string/gesture_settings_activity_title"
     settings:keywords="@string/keywords_gesture_navigation_settings">
 
+
     <PreferenceCategory
         android:persistent="false">
 
@@ -86,6 +87,14 @@
         android:selectable="true"
         settings:textStart="@string/short_label"
         settings:textEnd="@string/long_label"
+        android:dependency="navigation_bar_hint" />
+
+    <com.android.settingslib.widget.SliderPreference
+        android:key="gesture_navbar_height_preference"
+        android:title="@string/gesture_navbar_radius_title"
+        android:max="4"
+        settings:textStart="@string/thin_label"
+        settings:textEnd="@string/thick_label"
         android:dependency="navigation_bar_hint" />
 
     <com.android.settings.preferences.SystemSettingSwitchPreference

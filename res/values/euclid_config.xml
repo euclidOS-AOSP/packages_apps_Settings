@@ -33,4 +33,7 @@
 
     <!-- Show Now Playing -->
     <bool name="config_show_now_playing">false</bool>
+
+    <!-- Whether to show TouchGestures preference -->
+    <bool name="config_supportsTouchGestures">false</bool>
 </resources>

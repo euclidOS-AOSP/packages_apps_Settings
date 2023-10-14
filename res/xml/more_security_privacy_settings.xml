@@ -165,6 +165,15 @@
         android:fragment="com.android.settings.enterprise.EnterprisePrivacySettings"
         settings:controller="com.android.settings.enterprise.EnterprisePrivacyPreferenceController"/>
 
+        <Preference
+            android:key="manage_device_admin"
+            android:title="@string/manage_device_admin"
+            android:summary="@string/summary_placeholder"
+            android:fragment=
+                "com.android.settings.applications.specialaccess.deviceadmin.DeviceAdminSettings"
+            settings:controller=
+                "com.android.settings.enterprise.ManageDeviceAdminPreferenceController" />
+
     <Preference
         android:order="243"
         android:key="financed_privacy"

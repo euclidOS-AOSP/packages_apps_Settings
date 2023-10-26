@@ -17,4 +17,6 @@
     <string name="maintainer_official">OFFICIAL</string>
     <string name="maintainer_unofficial">UNOFFICIAL BUILD</string>
 
+    <!-- Screenshot shutter -->
+    <string name="screenshot_shutter_sound_title">Screenshot sound</string>
 </resources>

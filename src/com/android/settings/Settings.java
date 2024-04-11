@@ -591,4 +591,6 @@ public class Settings extends SettingsActivity {
     public static class PrismLockscreenActivity extends SettingsActivity {}
     public static class PrismQuickSettingsActivity extends SettingsActivity {}
     public static class PrismStatusBarActivity extends SettingsActivity {}
+
+    public static class PrivateDnsSettingsActivity extends SettingsActivity { /* empty */ }
 }

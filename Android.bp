@@ -57,6 +57,8 @@ android_library {
         "src/**/*.kt",
         "Prism/src/**/*.java",
         "Prism/src/**/*.kt",
+        "VendorSupport/src/**/*.java",
+        "VendorSupport/src/**/*.kt",
     ],
 
     exclude_srcs: [
@@ -73,8 +75,10 @@ android_library {
         "res-export", // for external usage
         "res-product",
         "Prism/res",
+        "VendorSupport/res",
     ],
     optional_uses_libs: ["com.android.extensions.appfunctions"],
+
     static_libs: [
         // External dependencies
         "androidx.compose.runtime_runtime-livedata",

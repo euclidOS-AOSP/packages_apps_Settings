@@ -78,6 +78,11 @@
             android:title="@string/show_navbar_hint_title"
             android:summary="@string/show_navbar_hint_summary"
             android:defaultValue="true" />
+
+    <com.android.settings.preferences.SystemSettingSwitchPreference
+        android:key="enable_taskbar"
+        android:title="@string/navigation_bar_enable_taskbar_title"
+        android:summary="@string/navigation_bar_enable_taskbar_summary" />
     </PreferenceCategory>
 
     <PreferenceCategory

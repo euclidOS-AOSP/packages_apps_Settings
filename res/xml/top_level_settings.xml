@@ -21,6 +21,16 @@
     android:key="top_level_settings">
 
     <com.android.settings.widget.HomepagePreference
+        android:fragment="com.prism.settings.PrismSettings"
+        android:icon="@drawable/ic_homepage_prism"
+        android:key="top_level_prism"
+        android:order="-160"
+        android:title="@string/prism_dashboard_title"
+        android:summary="@string/prism_dashboard_summary"
+        settings:highlightableMenuKey="@string/menu_key_prism"
+        settings:controller="com.prism.settings.TopLevelPrismSettingsPreferenceController"/>
+
+    <com.android.settings.widget.HomepagePreference
         android:fragment="com.android.settings.network.NetworkDashboardFragment"
         android:icon="@drawable/ic_settings_wireless"
         android:key="top_level_network"

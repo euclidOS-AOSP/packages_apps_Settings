@@ -49,6 +49,16 @@
             android:summary="@string/connected_devices_dashboard_default_summary"
             settings:highlightableMenuKey="@string/menu_key_connected_devices"
             settings:controller="com.android.settings.connecteddevice.TopLevelConnectedDevicesPreferenceController"/>
+
+        <com.android.settings.widget.HomepagePreference
+            android:fragment="com.prism.settings.PrismSettings"
+            android:icon="@drawable/ic_homepage_prism"
+            android:key="top_level_prism"
+            android:order="-5"
+            android:title="@string/prism_dashboard_title"
+            android:summary="@string/prism_dashboard_summary"
+            settings:highlightableMenuKey="@string/menu_key_prism"
+            settings:controller="com.prism.settings.TopLevelPrismSettingsPreferenceController"/>
     </PreferenceCategory>
 
     <PreferenceCategory

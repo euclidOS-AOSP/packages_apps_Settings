@@ -631,6 +631,7 @@ public class Settings extends SettingsActivity {
     public static class MagnificationActivity extends SettingsActivity { /* empty */ }
     public static class FlashNotificationsActivity extends SettingsActivity { /* empty */ }
     public static class NotificationBundlesActivity extends SettingsActivity { /* empty */ }
+
     public static class NotificationSummarizationActivity extends SettingsActivity { /* empty */ }
 
     /** Activity for Adaptive Connectivity Settings. */
@@ -654,4 +655,11 @@ public class Settings extends SettingsActivity {
         }
     }
     public static class SafetyCenterActivity extends SettingsActivity { }
+
+    /** Prism Activities **/
+    public static class PrismActivity extends SettingsActivity {}
+    public static class PrismThemesActivity extends SettingsActivity {}
+    public static class PrismLockscreenActivity extends SettingsActivity {}
+    public static class PrismQuickSettingsActivity extends SettingsActivity {}
+    public static class PrismStatusBarActivity extends SettingsActivity {}
 }

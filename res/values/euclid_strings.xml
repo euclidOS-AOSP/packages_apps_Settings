@@ -20,4 +20,10 @@
     <string name="adb_enable_root">Rooted debugging</string>
     <string name="adb_enable_summary_root">Allow running Android debugging as root</string>
 
+    <!-- About phone screen, status item label -->
+    <string name="euclid_firmware_version">Euclid version</string>
+
+    <!-- About phone screen, status item URI -->
+    <string name="euclid_website_uri" translatable="false">https://euclidos.org</string>
+
 </resources>

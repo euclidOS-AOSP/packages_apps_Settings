@@ -62,7 +62,7 @@ public class AODSchedule extends SettingsPreferenceFragment implements
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.LUNARIS;
+        return MetricsProto.MetricsEvent.PRISM;
     }
 
     @Override

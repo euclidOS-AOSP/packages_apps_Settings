@@ -31,7 +31,7 @@ import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settingslib.search.SearchIndexable;
 
-import org.lunaris.settings.preferences.CustomSeekBarPreference;
+import com.android.settings.preferences.CustomSeekBarPreference;
 
 /**
  * volume steps settings under sound
@@ -76,7 +76,7 @@ public class VolumeStepsSettings extends SettingsPreferenceFragment implements
 
     @Override
     public int getMetricsCategory() {
-        return MetricsEvent.LUNARIS;
+        return MetricsEvent.PRISM;
     }
 
     public static final BaseSearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =

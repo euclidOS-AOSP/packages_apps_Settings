@@ -30,14 +30,6 @@
         settings:searchable="false"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionDetailPreferenceController"/>
 
-    <!-- Euclid version -->
-    <Preference
-        android:key="euclid_version"
-        android:title="@string/euclid_version"
-        android:summary="@string/summary_placeholder"
-        settings:enableCopying="true"
-        settings:controller="com.android.settings.deviceinfo.firmwareversion.EuclidVersionPreferenceController"/>
-
     <!-- Maintainer Info -->
     <Preference
         android:key="maintainer_info"

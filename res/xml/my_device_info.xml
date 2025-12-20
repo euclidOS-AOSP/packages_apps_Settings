@@ -22,10 +22,17 @@
     android:title="@string/about_settings">
 
     <!-- euclid logo -->
-    <com.android.settingslib.widget.LayoutPreference
+    <!-- <com.android.settingslib.widget.LayoutPreference
         android:layout="@layout/euclid_logo"
         android:key="euclid_logo"
         android:order="-1"
+        android:selectable="false" / -->
+
+    <!-- Euclid Top Header -->
+    <com.android.settingslib.widget.LayoutPreference
+        android:key="my_device_hw_header"
+        android:order="-999"
+        android:layout="@layout/euclid_about"
         android:selectable="false" />
 
     <com.android.settingslib.widget.LayoutPreference

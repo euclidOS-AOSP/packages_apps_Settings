@@ -16,11 +16,4 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-<string-array name="official_maintainers">
-    <item>Mrick343</item>
-    <item>TRIDEV</item>
-    <item>snow</item>
-    <item>NSR</item>
-</string-array>
-
 </resources>

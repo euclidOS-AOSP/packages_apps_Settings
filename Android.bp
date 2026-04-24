@@ -142,6 +142,7 @@ android_library {
         "androidx.fragment_fragment-ktx",
         "androidx.preference_preference-ktx",
         "kotlin-stdlib",
+        "SystemUISharedLib",
         "kotlinx_coroutines_android",
         "kotlinx_coroutines",
     ],
